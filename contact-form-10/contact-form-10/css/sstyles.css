@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,900);
+
+html {
+	height: 100%;
+	background: radial-gradient(circle,  20%, #ccc);
+	background-size: cover;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: aqua;
+}
+
+.generate {
+    /* Remove button styles */
+    border: none;
+    background: transparent;
+    outline: none;
+    overflow: none;
+  
+    /* Make 'clickable' */
+    cursor: pointer;
+}
+  
+.number {
+  /* Make it big */
+  font-weight: 1000;
+  font-size: 300px;
+  /* Center it */
+  width: 100%;
+  min-height: 100%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  color: purple;
+  font-family: Georgia;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.options {
+  background-color: #555;
+  border-radius: 5px;
+  color: #efefef;
+  padding: 10px 20px;
+  position: absolute;
+  cursor: pointer;
+  
+  input, label {
+    display: none;
+  }
+  
+  &:hover input, &:hover label {
+    display: inline;
+  }
+  
+  input {
+    background-color: #efefef;
+    padding: 10px;
+    margin: 5px 15px;
+  }
+}
+
+.Account, .City, .Name, .LuckyNum {
+  text-align: center;
+  font-family: Georgia;
+}
