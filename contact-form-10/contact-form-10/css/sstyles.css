@@ -1,66 +1,29 @@
-@import url(https://fonts.googleapis.com/css?family=Exo+2:400,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 
-html {
-	height: 100%;
-	background: radial-gradient(circle,  20%, #ccc);
-	background-size: cover;
-}
-
-body {
-  font-family: "Exo 2", sans-serif;
-  background-color: aqua;
-}
-
-.generate {
-    /* Remove button styles */
-    border: none;
-    background: transparent;
-    outline: none;
-    overflow: none;
-  
-    /* Make 'clickable' */
-    cursor: pointer;
-}
-  
-.number {
-  /* Make it big */
-  font-weight: 1000;
-  font-size: 300px;
-  /* Center it */
-  width: 100%;
-  min-height: 100%;
-  overflow: auto;
+.container {
   margin: auto;
-  position: absolute;
-  color: purple;
-  font-family: Georgia;
-  top: 0; left: 0; bottom: 0; right: 0;
+  width: 400px;
 }
 
-.options {
-  background-color: #555;
-  border-radius: 5px;
-  color: #efefef;
-  padding: 10px 20px;
-  position: absolute;
-  cursor: pointer;
-  
-  input, label {
-    display: none;
-  }
-  
-  &:hover input, &:hover label {
-    display: inline;
-  }
-  
-  input {
-    background-color: #efefef;
-    padding: 10px;
-    margin: 5px 15px;
-  }
+.path--background {
+  fill: rgb(34, 213, 201);
+  stroke: #fff;
+  stroke-width: 0px;
 }
 
-.Account, .City, .Name, .LuckyNum {
-  text-align: center;
-  font-family: Georgia;
+.pulse {
+  fill: rgb(255, 74, 74) !important;
+}
+
+.path--foreground {
+  fill: #eee;
+  stroke: #eee;
+  stroke-width: 2px;
+}
+
+.label {
+  font: 90px "Open Sans";
+  font-weight: 900;
+  text-anchor: middle;
+  fill: rgb(34, 213, 201);
 }
