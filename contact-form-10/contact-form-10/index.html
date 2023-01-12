@@ -158,6 +158,19 @@
 		</div>
   
 	</section>
+	curl --location --request POST 'https://data.mongodb-api.com/app/data-cbmed/endpoint/data/v1/action/findOne' \
+--header 'Content-Type: application/json' \
+--header 'Access-Control-Request-Headers: *' \
+--header 'api-key: 4YvCoeK0kkKBNLpLlTykgClGTxR8ZxUP31HjzFEZQvkXcgBFku8jFrEcPxrM3nmB' \
+--header 'Accept: application/ejson' \
+--data-raw '{
+    "collection":"Players",
+    "database":"Cartella_Game",
+    "dataSource":"Cluster0",
+    "projection": {"_id": 1}
+}'
+
+	
 curl --location --request POST 'https://data.mongodb-api.com/app/data-cbmed/endpoint/data/v1/action/findOne' \
 --header 'Content-Type: application/json' \
 --header 'Access-Control-Request-Headers: *' \
